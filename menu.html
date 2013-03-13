@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1">
+    <title>jQueryMobileでiPadのような2カラムデザイン</title>
+    <link rel="stylesheet" href="/js/jquery.mobile/jquery.mobile-1.1.1.css"></link>
+    <link rel="stylesheet" href="/css/common.css"></link>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.js" ></script>
+    <script type="text/javascript" src="/js/common.js"></script>
+    <script type="text/javascript" src="/js/jquery.mobile/jquery.mobile-1.1.1.js"></script>
+  </head>
+  <body>
+    <section data-role="page">
+      <div class="ui-grid-a ipad-grid">
+        <div class="ui-block-b ipad-content-block">
+          <header data-role="header" data-theme="c" class="ipad-content-header">
+            <h1>メニュー選択アプリ試作版</h1>
+          </header>
+          <div data-role="content" class="ipad-content-body">
+			<select name="select-course" id="select-course"></select>
+			
+			<div id="menu_area" class="ui-body ui-body-e">
+				<!-- <h1 id="course_name">MENU NAME</h1> -->
+				<h2 id="course_price">MENU PRICE</h2>
+				<div id="menu">
+					<div data-role="collapsible" data-collapsed="false" data-theme="e">
+						<h3>Antipasto</h3>
+						<p id="Antipasto"></p>
+						<div id="select-Antipasto-area" class="select-menu-area" style="display:none;">
+							<div class="select-menu">
+								<select name="select-Antipasto" id="select-Antipasto"></select>
+							</div>
+							<div class="select-menu-submit">
+								<input id="submit-Antipasto" type="button" value="決定" />
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div data-role="collapsible" data-collapsed="false" data-theme="e">
+						<h3>Antipasto2</h3>
+						<p id="Antipasto2"></p>
+						
+						<div id="add-Antipasto2" class="add-menu-submit">
+							<input id="add-submit-Antipasto2" type="button" value="メニュー追加する" />
+						</div>
+						<div id="select-Antipasto2-area" class="select-menu-area" style="display:none;">
+							<div class="select-menu">
+								<select name="select-Antipasto2" id="select-Antipasto2"></select>
+							</div>
+							<div class="select-menu-submit">
+								<input id="submit-Antipasto2" type="button" value="決定" />
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div data-role="collapsible" data-collapsed="false" data-theme="e">
+						<h3>Pesce</h3>
+						<p id="Pesce"></p>
+						<div id="select-Pesce-area" class="select-menu-area" style="display:none;">
+							<div class="select-menu">
+								<select name="select-Pesce" id="select-Pesce"></select>
+							</div>
+							<div class="select-menu-submit">
+								<input id="submit-Pesce" type="button" value="決定" />
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>				
+					<div data-role="collapsible" data-collapsed="false" data-theme="e">
+						<h3>Pasta</h3>
+						<p id="Pasta"></p>
+						<div id="select-Pasta-area" class="select-menu-area" style="display:none;">
+							<div class="select-menu">
+								<select name="select-Pasta" id="select-Pasta"></select>
+							</div>
+							<div class="select-menu-submit">
+								<input id="submit-Pasta" type="button" value="決定" />
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>	
+					<div data-role="collapsible" data-collapsed="false" data-theme="e">
+						<h3>Pasta2</h3>
+						<p id="Pasta2"></p>
+						<div id="add-Pasta2" class="add-menu-submit">
+							<input id="add-submit-Pasta2" type="button" value="メニュー追加する" />
+						</div>
+						<div id="select-Pasta2-area" class="select-menu-area" style="display:none;">
+							<div class="select-menu">
+								<select name="select-Pasta2" id="select-Pasta2"></select>
+							</div>
+							<div class="select-menu-submit">
+								<input id="submit-Pasta2" type="button" value="決定" />
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div data-role="collapsible" data-collapsed="false" data-theme="e">
+						<h3>Carne</h3>
+						<p id="Carne"></p>
+						<div id="select-Carne-area" class="select-menu-area" style="display:none;">
+							<div class="select-menu">
+								<select name="select-Carne" id="select-Carne"></select>
+							</div>
+							<div class="select-menu-submit">
+								<input id="submit-Carne" type="button" value="決定" />
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>				
+					<div data-role="collapsible" data-collapsed="false" data-theme="e">
+						<h3>Dolce</h3>
+						<p id="Dolce"></p>
+					</div>	
+				</div>
+			</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
